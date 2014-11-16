@@ -1,7 +1,8 @@
 .DS_Store
 .idea
-/node_modules
+node_modules
 *.swp
 *.swo
-generated/*
-dist/*
+dist
+generated
+app/css/main.less
