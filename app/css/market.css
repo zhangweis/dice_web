@@ -1,0 +1,147 @@
+.market-selector {
+	margin-top: 10px;
+}
+
+.market .panel {
+	border: none;
+	margin-bottom: 20px;
+}
+
+.markets-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.no-account-selected-note {
+	margin: 40px auto;
+	font-size: 36px;
+	color: #888;
+	text-align: center;
+}
+
+.account-selector {
+	margin: 10px 4px 0 0;
+	text-align: right;
+}
+
+.balance {
+	margin-top: 2px;
+}
+
+.account-selector .title {
+	font-size: 18px;
+	position: relative;
+	top: 4px;
+}
+
+.no-lr-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.no-lr-margin {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+span.cell {
+	line-height: 34px;
+}
+
+.market-table {
+	width: 100%;
+}
+
+.market-table td {
+	font-size: 12px;
+	text-align: left !important;
+}
+
+.market-table th {
+	text-align: left !important;
+}
+
+.market-table button.btn-xs {
+	display: table-cell;
+	width: 5em;
+}
+
+.market-table button.btn-xs {
+	margin: 0.1em 0;
+}
+
+div.fixed-height-table {
+	max-height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.market-table tr.canceled td {
+	background-color: #f4d7d6 !important;
+}
+
+.market-table tr.unconfirmed td {
+	background-color: #FFF6E8 !important;
+}
+
+.market-table tr.pending td {
+	background-color: #e4f4d4 !important;
+}
+
+.stats {
+	overflow: visible;
+}
+
+.market-stats .stat {
+	text-align: left;
+	font-size: 10px;
+	overflow: hidden;
+	padding: 5px 10px;
+}
+.market-stats .stat .value {
+	font-size: 12px;
+	color: #888;
+	letter-spacing: normal;
+}
+
+.header .stat {
+	margin-top: 8px;
+}
+
+.orders-row .panel-heading {
+	padding-right: 0;
+}
+
+.orders-row .panel-body {
+	padding-right: 0;
+}
+
+.orders-row .panel {
+	padding-right: 0;
+}
+
+.chart svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.chart-tooltip {
+	background-color: #000;
+	color: #eee;
+	padding: 3px 6px 3px 6px;
+	z-index: 1000;
+}
+
+.chart-tooltip h4 {
+	font-size: 90%;
+	padding: 4px 0 4px 0;
+	margin: 0;
+}
+
+.chart-tooltip p {
+	font-size: 80%;
+	padding: 2px 0;
+	margin: 0;
+	text-align: left;
+}

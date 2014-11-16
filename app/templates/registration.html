@@ -1,0 +1,17 @@
+<div class="modal-header">
+    <h3 class="modal-title">Register {{account.name}}</h3>
+</div>
+<form role="form" class="form-horizontal" ng-submit="ok()">
+    <div class="modal-body">
+        <a tooltip='Can be changed in preferences'>Transaction Fee</a> for registration: {{ transaction_fee }} <br><br>
+        <div class="form-group">
+            <label for="contact_address">Pay with</label>
+            <select ng-model="m.payfrom" type="text" class="form-control" placeholder="Account Name" id="payfrom" ng-options="account | formatAccountBalance for (key, account) in accounts | filter:symbol" required></select><br>
+            <span ng-show="accounts.length == 0">You need fees for registration, but you still do not have any funds yet</span><br>
+        </div>
+    </div>
+</form>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok(payWith)" translate>btn.ok</button>
+    <button class="btn btn-warning" ng-click="cancel()" translate>btn.cancel</button>
+</div>
