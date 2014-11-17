@@ -25,7 +25,7 @@ angular.module("app").controller "DiceController", ($scope, $filter, $location, 
             startBlock = blockCount-30*24*60*60/5;
             if (startBlock<0)
                 startBlock = 0
-            
+            Wallet.refresh_balances()
             Wallet.rpc.request('wallet_account_dice_transaction_history', ["", "", 0, startBlock, -1]).then (result) =>
                 Wallet.get_current_or_first_account().then (account)->
                     $scope.balance = Wallet.balances[account.name]['JDST']
